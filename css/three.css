@@ -1,0 +1,48 @@
+/* Section Three */
+#three {
+    background-color: #49453B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#three .three-text {
+    color: white;
+    padding: 6rem 0 6rem 0;
+    width: 80%;
+}
+
+#three .three-text h1 {
+    font-size: 2rem;
+    border-bottom: 1px solid white;
+    padding-bottom: .5rem;
+    font-weight: 400;
+}
+
+#three .three-text p {
+    padding-top: 2rem;
+    font-size: 1.1rem;
+    padding-bottom: 4rem;
+}
+
+@media (max-width: 800px) {
+    #three .three-text {
+        color: white;
+        padding: 2rem 0 2rem 0;
+        width: 80%;
+    }
+
+    #three .three-text h1 {
+        font-size: 1.5rem;
+        border-bottom: 1px solid white;
+        padding-bottom: .5rem;
+        font-weight: 400;
+    }
+
+    #three .three-text p {
+        padding-top: 2rem;
+        font-size: .9rem;
+        padding-bottom: 3rem;
+    }
+}
+/* End Section Three */

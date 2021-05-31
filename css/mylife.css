@@ -1,0 +1,245 @@
+/* Style MyLife */
+#mylife {
+    display: grid;
+    height: 1500px;
+    grid-template-columns: repeat(5,20%);
+    grid-row: repeat(3,1fr);
+}
+
+#mylife .lifeone {
+    grid-column: 1/3;
+    grid-row: 1;
+    background-image: url("../images/pic01.jpg");
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+#mylife .lifeone::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    background-color: #364135;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .6;
+}
+
+#mylife .lifeone:hover::before {
+    opacity: 0;
+    transition: .5s;
+}
+
+#mylife .lifetwo {
+    grid-column: 3/-1;
+    grid-row: 1;
+    background-image: url("../images/pic02.jpg");
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+#mylife .lifetwo::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    background-color: #4d5d53;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .6;
+}
+
+#mylife .lifetwo:hover::before {
+    opacity: 0;
+    transition: .5s;
+}
+
+#mylife .lifethree {
+    grid-column: 1/4;
+    grid-row: 2;
+    background-image: url("../images/pic03.jpg");
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+#mylife .lifethree::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    background-color: #3a3431;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .6;
+}
+
+#mylife .lifethree:hover::before {
+    opacity: 0;
+    transition: .5s;
+}
+
+#mylife .lifefour {
+    grid-column: 4/-1;
+    grid-row: 2;
+    background-image: url("../images/pic04.jpg");
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+#mylife .lifefour::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    background-color: #3d2b1f;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .6;
+}
+
+#mylife .lifefour:hover::before {
+    opacity: 0;
+    transition: .5s;
+}
+
+#mylife .lifefive {
+    grid-column: 1/3;
+    grid-row: 3;
+    background-image: url("../images/pic05.jpg");
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+#mylife .lifefive::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    background-color: #6b5636;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .6;
+}
+
+#mylife .lifefive:hover::before {
+    opacity: 0;
+    transition: .5s;
+}
+
+#mylife .lifesix {
+    grid-column: 3/-1;
+    grid-row: 3;
+    background-image: url("../images/pic06.jpg");
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+#mylife .lifesix::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    background-color: #cd7f32;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .6;
+}
+
+#mylife .lifesix:hover::before {
+    opacity: 0;
+    transition: .5s;
+}
+
+#mylife .img-description {
+    position: absolute;
+    color: white;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 4rem;
+}
+
+#mylife .img-description h5 {
+    font-size: 2rem;
+    font-weight: 500;
+    padding-bottom: .5rem;
+}
+
+#mylife .img-description p {
+    border-top: 1px solid white;
+    padding-top: 1rem;
+}
+
+@media (max-width: 800px){
+    #mylife {
+        display: grid;
+        height: 1500px;
+        grid-template-columns: 100%;
+        grid-row: repeat(6,1fr);
+    }
+
+    #mylife .lifeone {
+        grid-column: 1;
+        grid-row: 1;
+        background-image: url("../images/pic01.jpg");
+        background-size: cover;
+        position: relative;
+        z-index: 1;
+    }
+
+    #mylife .lifetwo {
+        grid-column: 1;
+        grid-row: 2;
+        background-image: url("../images/pic02.jpg");
+        background-size: cover;
+        position: relative;
+    }  
+    
+    #mylife .lifethree {
+        grid-column: 1;
+        grid-row: 3;
+        background-image: url("../images/pic03.jpg");
+        background-size: cover;
+        position: relative;
+        z-index: 1;
+    }
+
+    #mylife .lifefour {
+        grid-column: 1;
+        grid-row: 4;
+        background-image: url("../images/pic04.jpg");
+        background-size: cover;
+        position: relative;
+        z-index: 1;
+    }
+
+    #mylife .lifefive {
+        grid-column: 1;
+        grid-row: 5;
+        background-image: url("../images/pic05.jpg");
+        background-size: cover;
+        position: relative;
+        z-index: 1;
+    }
+
+    #mylife .lifesix {
+        grid-column: 1;
+        grid-row: 6;
+        background-image: url("../images/pic06.jpg");
+        background-size: cover;
+        position: relative;
+        z-index: 1;
+    }
+}
+/* End Style MyLife */

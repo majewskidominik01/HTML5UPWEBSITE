@@ -1,0 +1,181 @@
+/* Style Header */
+
+#header {
+    background-image: url("../images/bg1.jpg");
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+#header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .7;
+    z-index: -1;
+}
+
+#header header {
+    display: flex;
+    padding: 1.2rem 2rem;
+    color: white;
+    letter-spacing: .2rem;
+    font-size: 1.4rem;
+    justify-content: space-between;
+}
+
+#header .logo {
+    display: flex;
+    cursor: pointer;
+}
+
+#header .logoone {
+    background-color: white;
+    color: purple;
+    padding: .2rem .3rem;
+}
+
+#header .logotwo {
+    margin-left: .2rem;
+    padding: .2rem .2rem;
+}
+
+#header nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+    }
+    
+
+#header nav h5 {
+    margin-left: 0.5rem;
+    font-weight: 500;
+}
+
+#header nav .fas {
+    margin-left: 0.5rem;
+}
+
+#header aside {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    padding: 6rem;
+    width: 100%;
+}
+
+#header .name { 
+    font-size: 4rem;
+    padding: 2rem 0;
+    border-bottom:  3px solid white;
+}
+
+#header .name h5 {
+    font-weight: 500;
+}
+
+#header .description {
+    padding: 2rem 0;    
+    display: flex;
+    align-items: center;      
+}
+
+#header .description p {
+    margin-right: 2.5rem;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: .10rem;
+    font-weight: 400;
+}
+
+button {
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    width: 220px;
+    height: 50px;
+    font-weight: 800;
+    letter-spacing: .3rem;
+    overflow: none;
+}
+
+button .fas {
+    margin-left: .5rem;
+
+}
+
+button:hover{
+    transition: 1s;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+
+@media (max-width:800px) {
+    #header {
+        background-image: url("../images/bg1.jpg");
+        background-size: cover;
+        background-position: center center;
+        min-height: 100vh;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+    }
+
+    #header header {
+        display: flex;
+        padding: 1.2rem 1rem;
+        color: white;
+        letter-spacing: .2rem;
+        font-size: .8rem;
+        justify-content: space-between;
+    }
+
+    #header aside {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: white;
+        padding: 3rem;
+        width: 100%;
+    }
+
+    #header .name { 
+        font-size: 2rem;
+        padding: 2rem 0;
+        border-bottom:  3px solid white;
+    }
+
+    #header .description p {
+        margin-right: 1rem;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        letter-spacing: .10rem;
+        font-weight: 400;
+    }
+    button {
+        color: white;
+        background-color: transparent;
+        border: 2px solid white;
+        width: 300px;
+        height: 50px;
+        font-weight: 800;
+        letter-spacing: .3rem;
+        overflow: none;
+        font-size: 0.6rem;
+    }
+    button .fas {
+        margin-left: .5rem;
+        display: none;
+    }
+}
+/* End Style Header */
